@@ -27,4 +27,17 @@ function longestWord(str) {
   return `The longest word is "${longestWord}"`;
 }
 
+// In Second Thought
+/* function longestWord(str) {
+  const array = str.split(" ");
+  let value = [];
+  for (let i = 0; i < array.length; i++) {
+    let x = array[i].length;
+    value.push(x);
+  }
+  let x = Math.max(...value);
+  x = value.indexOf(x);
+  return `The longest word is "${array[x]}"`;
+} */
+
 console.log(longestWord("I am learning Programming to become a programmer"));
